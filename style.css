@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'mountains_of_christmasregular';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/35984/mountainsofchristmas-webfont.woff2') format('woff2'),
+        url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/35984/mountainsofchristmas-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    background-color: #1d1d2e;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+svg {
+    width: 90%;
+    height: 90%;
+    visibility: hidden;
+
+}
+
+#endMessage {
+    font-family: mountains_of_christmasregular;
+    font-size: 2rem;
+    text-anchor: middle;
+    text-align: center;
+    fill: #FFFFFF;
+    color: #FFFFFF;
+    opacity: 0;
+    letter-spacing: 1px;
+}
+
+a {
+    color: white;
+    text-decoration: underline dotted #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;        
+    justify-content: space-between;
+  }
+  
+  pre {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #00ff0a;
+  }
+  
+  pre span:first-child {
+    color: rgb(255, 255, 0);
+  }
+  
+  pre span:last-child {
+    color: #795548;
+  }
+  
+  .snow {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: -100px;
+  }
+  
+  .snow-floor {
+    width: 100%;
+    height: 3%;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+  }
+  
+  .title {
+    color: #fff;
+    font-family: "Lobster";
+    font-weight: lighter;
+  }
+  
+  @keyframes fall {
+    0% {
+      top: -100px;
+    }
+  
+    100% {
+      top: 100vh;
+    }
+  }
